@@ -266,5 +266,11 @@ namespace QR_Reader_Desktop
                 s.ShowDialog();
             GC.Collect();
         }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (About a = new About())
+                a.ShowDialog();
+        }
     }
 }

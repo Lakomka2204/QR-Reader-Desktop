@@ -16,7 +16,7 @@ namespace QR_Reader_Desktop
         public static int BorderRadius { get; set; } = 0;
         public static int PPU { get; set; } = 20;
         public static bool DrawQuietZones { get; set; } = true;
-        static readonly string AppName = FileVersionInfo.GetVersionInfo(Process.GetCurrentProcess().MainModule.FileName).FileDescription;
+        public static readonly string AppName = FileVersionInfo.GetVersionInfo(Process.GetCurrentProcess().MainModule.FileName).FileDescription;
         public static void Load()
         {
             using (RegistryKey key = Registry.CurrentUser.OpenSubKey($"SOFTWARE\\{AppName}"))
